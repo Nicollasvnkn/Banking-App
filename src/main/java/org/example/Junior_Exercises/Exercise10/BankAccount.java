@@ -1,10 +1,7 @@
 package org.example.Junior_Exercises.Exercise10;
 
 import org.example.Junior_Exercises.Exercise12.InsufficientFundsException;
-import org.example.Junior_Exercises.Exercise16.Reportable;
 import org.example.Junior_Exercises.Exercise17.Account;
-
-import java.time.LocalDateTime;
 
 public class BankAccount extends Account {
 
@@ -37,11 +34,6 @@ public class BankAccount extends Account {
 
     }
 
-
-    protected void changeBalance(double delta) {
-        this.balance += delta;
-        this.updatedAt = java.time.LocalDateTime.now();
-    }
 
     @Override
     public String generateReport() {

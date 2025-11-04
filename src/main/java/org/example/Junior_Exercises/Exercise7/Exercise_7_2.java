@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Exercise_7_2 {
     static boolean isPalindrome (String word){
         word = word.toLowerCase();
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
 
         for (int i = word.length() - 1; i >= 0; i--) {
-            reversed += word.charAt(i);
+            reversed.append(word.charAt(i));
         }
 
-        return word.equals(reversed);
+        return word.contentEquals(reversed);
     }
 
     public static void main(String [] args) {

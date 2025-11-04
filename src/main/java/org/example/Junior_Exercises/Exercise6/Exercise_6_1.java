@@ -1,6 +1,5 @@
 package org.example.Junior_Exercises.Exercise6;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Exercise_6_1 {
